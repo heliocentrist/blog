@@ -1,0 +1,27 @@
+baseurl:
+title: The Elder Scripts
+subtitle: A monoid in the category of things I learned
+author: Yury Liavitski
+simple_search: http://google.com/search
+description: A blog about programming
+name: theelderscripts
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+permalink: /articles/:short_year/:title
+timezone: Europe/Amsterdam
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+#page:
+#  template: _page.txt
+#  extension: md
+editor: gvim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/clayh53.github.com/
